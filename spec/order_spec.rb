@@ -1,12 +1,15 @@
 require 'order'
 
-
 describe Order do 
 
-	it 'should initialize with a user tag' do
-		order=Order.new("Robin")
-		expect(order.user).to eq("Robin")
-	end
+	let (:order) {Order.new("Robin")}
+
+	# it 'should show the menu to the user' do
+	# 	expect(order.respond_to?(:show_menu)).to be_true
+	# end
+
+
+
 
 
 end

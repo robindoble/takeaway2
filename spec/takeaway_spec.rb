@@ -6,11 +6,11 @@ describe Takeaway do
 
 	let (:takeaway) {Takeaway.new}
 
-	it 'should be able to add users' do
-	#assume no name attribute for takeaway to keep things simple 
-		takeaway=Takeaway.new
-		takeaway.new_user("Robin")
+	it 'should be able to create a menu' do
+	# this will be a class but I will initialize with a fixed menu"
+		expect(takeaway.respond_to?(:create_menu)).to be_true
 	end
+
 
 
 	

@@ -1,13 +1,13 @@
+require_relative 'order'
+
 class User
 
 attr_reader :name
+attr_accessor :order
+
 
 def initialize(name)
 	@name = name
-end
-
-def new_order
-	Order.new(name)
 end
 
 end
